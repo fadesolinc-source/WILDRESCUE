@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #f6eee4;
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  position: static;
+  background: #000;
+  color: #fff;
+  padding: 1%;
+}
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.social img {
+  width: 35px;
+  height: auto;
+}

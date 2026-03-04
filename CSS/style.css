@@ -1,0 +1,392 @@
+/* Author:Fadekemi Mariam Arowolo
+File name: Wild Rescues 
+Date: 03/2/26 */
+/* CSS RESET */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #f6eee4;
+  font-family: "lora", Arial, Helvetica, sans-serif;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 100%;
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rule for skip link */
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.skip:focus {
+  position: static;
+  background-color: #000;
+  color: #fff;
+  padding: 1%;
+}
+
+/* Style rules for header area */
+.mobile h1,
+.mobile h2 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 {
+  font-family: "Emblema One", cursive;
+  font-weight: bold;
+}
+
+.mobile h2 {
+  font-family: "Lora", serif;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #2a1f14;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+  border-top: 0.5px solid #f6eee4;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/* Hide desktop navigation in mobile */
+.tab-desk,
+.desktop,
+#menu-links {
+  display: none;
+}
+
+/* Mobile hamburger menu icon */
+.menu-icon {
+  display: block;
+  color: #f6eee4;
+  font-size: 2.2em;
+  padding: 0.5em 1em;
+  text-align: right;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Mobile menu links container */
+#menu-links a {
+  display: block;
+  color: #f6eee4;
+  text-decoration: none;
+  padding: 0.75em 1em;
+  border-top: 0.5px solid #f6eee4;
+}
+
+/* slightly increase mobile heading size */
+.mobile h1 {
+  font-size: 2em;
+}
+
+main {
+  padding: 20px;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+main h3 {
+  margin: 0;
+  padding-top: 2%;
+}
+
+main ul {
+  margin: 0;
+  list-style-type: square;
+}
+
+.link {
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mobile-tablet {
+  max-width: 350px;
+  padding: 15px;
+  border: 2px solid #000;
+  background-color: #fdf6ea;
+}
+
+.mobile-tablet h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.mobile-tablet p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+#contact {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+/* Mobile Styles [cite: 182] */
+.desktop {
+  display: none;
+}
+
+fieldset,
+input,
+textarea {
+  margin-bottom: 2%;
+}
+
+/* Mobile Styles [cite: 183] */
+legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Mobile Styles [cite: 184] */
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+/* Mobile Styles [cite: 185] */
+.reach {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* FAQ Styles */
+#questions p {
+  background-color: #deccba;
+  padding: 1em;
+  margin: 0.5em 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#answer {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #f6eeef;
+  border: 1px solid #2a1f14;
+}
+
+/* Style rules for mobile viewport */
+@media screen and (min-width: 550px), print {
+  .tab-desk {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+  /* Style rules to show mobile class and hide tab-desk class */
+  .mobile {
+    display: block;
+  }
+
+  .mobile,
+  .mobile-tablet {
+    display: block;
+  }
+
+  .tab-desk {
+    display: none;
+  }
+
+  .tab-desk,
+  .desktop {
+    display: none;
+  }
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 769px), print {
+  /* Desktop Viewport: Show desktop class, hide mobile-tablet class. */
+  .desktop {
+    display: block;
+  }
+
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    border: none;
+    font-family: geneva, Arial, sans-serif;
+  }
+
+  nav li a {
+    padding: 0.5em 1em;
+  }
+
+  .tab-desk,
+  .desktop {
+    display: block;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .mobile,
+  .mobile-tablet {
+    display: none;
+  }
+
+  .form-container {
+    display: flex;
+  }
+}
+
+/* Style rules for table */
+table {
+  border: 1px solid #2a1f14;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+th,
+td {
+  border: 1px solid #2a1f14;
+  padding: 1%;
+}
+
+th {
+  background-color: #2a1f14;
+  color: #fff;
+  font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+  background-color: #deccba;
+}
+
+/*style rules for footer content*/
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eeef;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+
+/* Tablet Viewport: Style rules for footer area */
+
+footer {
+  overflow: auto;
+}
+
+.copyright {
+  float: left;
+  width: 65%;
+}
+
+.social {
+  float: right;
+  width: 25%;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.social img {
+  width: 35px;
+  height: auto;
+}
